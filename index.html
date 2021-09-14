@@ -10,19 +10,17 @@
 <body>
   <!--header-->
   <header>
-    <a href="index.html">
-      <img src="assets/img/logo-paly.png" alt="logo paly" title="logo" height="60">
-    </a>
+    <img src="assets/img/habboclublogo.png" alt="Logo Equipo">
     <nav>
-      <ul class="menu">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="#">Contacto</a></li>
+      <ul>
+        <li><a href="#" class="menu">Inicio</a></li>
+        <li><a href="#" class="menu">Contacto</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <!--Descripcion del integrante-->
-    <section>
+    <section class="wrapper">
       <div class="report">
         <span>conoce a</span>
         <h1>Paulina Zambrano</h1>
@@ -34,16 +32,18 @@
           omnis neque, voluptate odio culpa ipsam.
         </p>
       </div>
-      <img class="photo" src="https://via.placeholder.com/500x400" alt="">
+      <div class="container-photo">
+        <img class="photo" src="./assets/img/paulina-zambrano.JPG" alt="Foto Paly">
+      </div>
     </section>
     <!--Aspectos generales-->
-    <section class="general">
+    <section class="wrapper">
       <h2>Aspectos generales</h2>
       <p class="description">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis,
         officia. Ipsum molestiae eius voluptates.
       </p>
-      <div class="container">
+      <div>
         <article class="aspects">
           <h3>Entorno</h3>
           <p>
@@ -74,59 +74,135 @@
       </div>
     </section>
     <!--Experiencia tecnologica-->
-    <section class="general">
+    <section class="wrapper">
       <h2>Experiencia tecnologica</h2>
       <p class="description">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
         Tenetur id asperiores dolore. Nulla, neque autem libero 
       </p>
       <h4>Aplicaciones de uso frecuente</h4>
-      <div>
-        <img src="https://via.placeholder.com/150" alt="Aplicacion 1">
-        <img src="https://via.placeholder.com/150" alt="Aplicacion 2">
-        <img src="https://via.placeholder.com/150" alt="Aplicacion 3">
-        <img src="https://via.placeholder.com/150" alt="Aplicacion 4">
-        <img src="https://via.placeholder.com/150" alt="Aplicacion 5">
-        <img src="https://via.placeholder.com/150" alt="Aplicacion 6">
-      </div>
+      <ul>
+        <li class="app"><img src="https://via.placeholder.com/150" alt="Aplicacion 1"></li>
+        <li class="app"><img src="https://via.placeholder.com/150" alt="Aplicacion 1"></li>
+        <li class="app"><img src="https://via.placeholder.com/150" alt="Aplicacion 1"></li>
+        <li class="app"><img src="https://via.placeholder.com/150" alt="Aplicacion 1"></li>
+        <li class="app"><img src="https://via.placeholder.com/150" alt="Aplicacion 1"></li>
+        <li class="app"><img src="https://via.placeholder.com/150" alt="Aplicacion 1"></li>
+        <li class="app"><img src="https://via.placeholder.com/150" alt="Aplicacion 1"></li>
+      </ul>
     </section>
-    <!--otros integrantes-->
-    <section class="general">
+    <!--Formulario-->
+    <section>
+      <form class="form"> 
+        <h2>Escribeme</h2>
+        <!--Nombre-->
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" class="text-input" placeholder=" Tu nombre ">
+        <!--E-mail-->
+        <label for="email">E-mail</label>
+        <input type="email" id="email" class="text-input" placeholder="ej: paly@habboclub.cl"> 
+        <!--Texto-->
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" rows="4" placeholder="Dejame aquí tu mensaje"></textarea>
+        <label>
+        <!--Check box-->
+        <input type="checkbox" name="notificaciones"> Quiero recibir notificaciones
+        </label>
+        <!--Button-->
+        <input type="submit" value="enviar" class="button">
+      </form>
+    </section>
+    <!--Otros integrantes-->
+    <section class="wrapper" class="integrantes">
       <h4>Otros integrantes</h4>
-      <div class="integrantes-container">
-        <article class="members">
-          <a href="https://www.youtube.com"><img src="https://via.placeholder.com/255" alt="foto Camilo"></a>
-          <h3>CAMILO GAETE</h3>
-        </article>
-        <article class="members">
-          <img src="https://via.placeholder.com/255" alt="">
-          <h3>NAZARET VILLARROEL</h3>
-        </article>
-        <article class="members">
-          <img src="https://via.placeholder.com/255" alt="">
-          <h3>CRISTIAN TAPIA</h3>
-        </article>
-        <article class="members">
-          <img src="https://via.placeholder.com/255" alt="">
-          <h3>GUILLERMO IBARRA</h3>
-        </article>
-      </div>
+      <ul>
+        <li class="integrante">
+          <article>
+            <img src="./assets/img/camilo.png" alt="Foto Camilo">
+            <span>Viña del Mar | 19 años</span>
+            <h3>Camilo Gaete</h3>
+          </article>
+          <a class="button-primary" href="">Visitar</a>
+        </li>
+        <li class="integrante">
+          <article>
+            <img src="./assets/img/guillermo.jpg" alt="Foto Guillermo">
+            <span>Quilpué | 27 años</span>
+            <h3>Guillermo Ibarra</h3>
+          </article>
+          <a class="button-primary" href="">Visitar</a>
+        </li>
+        <li class="integrante">
+          <article>
+            <img src="./assets/img/nazaret.jpg" alt="Foto Nazaret">
+            <span>Viña del Mar | 21 años</span>
+            <h3>Nazaret Villarroel</h3>
+          </article>
+          <a class="button-primary" href="">Visitar</a>
+        </li>
+        <li class="integrante">
+          <article>
+            <img src="./assets/img/wachimingo.jpg" alt="Foto Cristian">
+            <span>Romeral | 19 años</span>
+            <h3>Cristian Tapia</h3>
+          </article>
+          <a class="button-primary" href="">Visitar</a>
+        </li>
+      </ul>
     </section>
   </main>
   <footer>
-    <div>
-      <ul>
-        <li>News</li>
-        <li>Blog</li>
-        <li>Videos</li>
-        <li>FAQs</li>
+    <div class="redes-sociales-footer">
+      <ul class="footer-nav">
+        <li>Inicio</li>
+        <li>Contacto</li>
       </ul>
-      <img src="" alt="" />
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      <article>
+        <img src="assets/img/habboclublogo.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <ul class="footer-social-network-links">
+          <li>
+            <a href="https://facebook.com">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icono-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icono-twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icono-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtube.com">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icono-youtube" viewBox="0 0 16 16">
+                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+6494461709">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icono-telephone" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </article>
     </div>
-    <div>
+    <div class="copyright-footer">
       <p>&copy;2021 HABBO CLUB</p>
-    </div>
+    </div>  
   </footer>
+
 </body>
 </html>
